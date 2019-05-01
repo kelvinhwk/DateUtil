@@ -84,4 +84,9 @@ public class DateUtil {
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 		return sdf.format(startTime.getTime());
 	}
+
+	public static String toTimeStr_yyyyMMddHHmm(Calendar time) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		return sdf.format(time.getTime());
+	}
 }
